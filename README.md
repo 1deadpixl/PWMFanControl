@@ -14,7 +14,7 @@ This project consists of a Python script and a systemd service unit file to cont
 
 This Python script reads the CPU temperature of the Raspberry Pi and adjusts the speed of a connected PWM fan accordingly. The fan speed is set between a minimum and maximum speed, corresponding to a defined range of CPU temperatures.
 
-- **Dependencies**: RPi.GPIO, time, subprocess
+- **Dependencies**: RPi.GPIO, time, subprocess, numpy
 - **GPIO Mode**: BCM
 - **PWM Frequency**: 100Hz
 - **Temperature and Speed Range**: Customize the `minTemp`, `maxTemp`, `minSpeed`, and `maxSpeed` variables as needed.
@@ -50,4 +50,5 @@ Once installed, the service will run automatically on boot. The fan speed will a
 #### Credits
 
 - [Script](https://github.com/mklements/PWMFanControl) and [concept](https://www.the-diy-life.com/connecting-a-pwm-fan-to-a-raspberry-pi/) by [Michael Klements](https://github.com/mklements).
-- Adaptation and systemd integration for Raspberry Pi by Michael Ramstein.
+- Adaptation and systemd integration for Raspberry Pi by [Michael Ramstein](https://github.com/mrmstn)
+- NumPy integration by [Philippe Enzler](https://github.com/1deadpixl)
